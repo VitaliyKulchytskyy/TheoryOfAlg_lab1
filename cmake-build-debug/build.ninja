@@ -52,14 +52,14 @@ build cmake_object_order_depends_target_lab1: phony || CMakeFiles/lab1.dir
 build CMakeFiles/lab1.dir/src/main.cpp.o: CXX_COMPILER__lab1_Debug /home/karlenko/CLionProjects/TheoryOfAlg_lab1/src/main.cpp || cmake_object_order_depends_target_lab1
   DEP_FILE = CMakeFiles/lab1.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/karlenko/CLionProjects/TheoryOfAlg_lab1/include
+  INCLUDES = -I/home/karlenko/CLionProjects/TheoryOfAlg_lab1/include -I/home/karlenko/CLionProjects/TheoryOfAlg_lab1/test
   OBJECT_DIR = CMakeFiles/lab1.dir
   OBJECT_FILE_DIR = CMakeFiles/lab1.dir/src
 
 build CMakeFiles/lab1.dir/src/Maze.cpp.o: CXX_COMPILER__lab1_Debug /home/karlenko/CLionProjects/TheoryOfAlg_lab1/src/Maze.cpp || cmake_object_order_depends_target_lab1
   DEP_FILE = CMakeFiles/lab1.dir/src/Maze.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/karlenko/CLionProjects/TheoryOfAlg_lab1/include
+  INCLUDES = -I/home/karlenko/CLionProjects/TheoryOfAlg_lab1/include -I/home/karlenko/CLionProjects/TheoryOfAlg_lab1/test
   OBJECT_DIR = CMakeFiles/lab1.dir
   OBJECT_FILE_DIR = CMakeFiles/lab1.dir/src
 

@@ -1,7 +1,6 @@
 #ifndef LAB1_TEST_CPP
 #define LAB1_TEST_CPP
 
-#include <algorithm>
 #include "MyTest.h"
 #include "Queue.h"
 

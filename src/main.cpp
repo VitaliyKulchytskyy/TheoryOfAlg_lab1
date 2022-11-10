@@ -5,7 +5,7 @@
 #include "Queue.h"
 #include "Maze.h"
 #include "MyTest.h"
-#include "test.h"
+#include "../test/test.h"
 
 #define DEBUG_MODE  0
 #define TEST_QUEUE  1
