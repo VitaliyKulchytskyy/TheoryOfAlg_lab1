@@ -1,0 +1,28 @@
+@startuml
+-Вхід\nbfs(Maze& maze)
+:const auto& startPoint = maze.getStartPoint()\nmap<point_t, bool> visited\nvisited[startPoint] = true ]
+:Queue<Distance> q ]
+:.add(Distance(0, startPoint)) |
+:vector<Distance> weightedGraph ]
+:weightedGraph.push_back(Distance(0, startPoint)) |
+:const auto& finishPoint = maze.getFinishPoint() ]
+while(q.size() != 0)
+    : const Distance curr = q.front() ]
+    if(curr.vertex == finishPoint) then
+        :eightedGraph.push_back(Distance(curr.dist, finishPoint)) |
+        :buildBacktrackingTrail(maze, weightedGraph) |
+        end
+        floating note left: Вихід
+    endif
+    :q.poll() |
+    :const auto& neighborhoods = maze.getNeighborhoods(curr.vertex) ]
+    while(const auto& vertex : neighborhoods)
+        if(!visited[vertex] && maze.isValid(vertex)) then
+            :visited[curr.vertex] = true |
+            :q.add(Distance(curr.dist + 1, vertex)) ]
+        endif
+    endwhile
+endwhile
+:[!] There is no way to escape from the maze. >
+-Вихід
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+-Вхід\nMaze::findCharPointInMap(char findChar) const
+while(i = 0, getRowAmount)
+    while(j = 0, getColumnAmount)
+        if(m_asMap[i][j] == findChar) then
+            -return\n{i, j}
+            end
+        endif
+    endwhile
+endwhile
+end
+@enduml

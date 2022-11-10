@@ -1,0 +1,5 @@
+@startuml
+-Вхід\nMaze::isStartOrFinishPoint(point_t pointA, point_t pointB) const
+:const auto& pointANeighborhoods = getNeighborhoods(pointA) ]
+-Вихід\nany_of(pointANeighborhoods.cbegin(),\n\tpointANeighborhoods.cend(),\n\t[&pointB](point_t input){ return input == pointB; })
+@enduml

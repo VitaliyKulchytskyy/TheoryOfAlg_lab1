@@ -1,0 +1,11 @@
+@startuml
+-Вхід\nMaze::printMaze() const
+while(i = 0, m_iRowAmount)
+    while(j = 0, m_iColumnAmount)
+        :m_asMap[i][j] >
+    endwhile
+    : std::endl >
+    floating note left: каретка переноса\nне відображається
+endwhile
+-Вихід
+@enduml

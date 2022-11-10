@@ -1,0 +1,4 @@
+@startuml
+-Вхід\nMaze::getRowAmount() const
+-Вихід\nm_iRowAmount
+@enduml

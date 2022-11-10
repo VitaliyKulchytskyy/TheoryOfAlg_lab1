@@ -1,0 +1,4 @@
+@startuml
+-Вхід\nMaze::isStartOrFinishPoint(point_t pointA, point_t pointB) const
+-Вихід\ncheckPair == getStartPoint() ||\ncheckPair == getFinishPoint()
+@enduml

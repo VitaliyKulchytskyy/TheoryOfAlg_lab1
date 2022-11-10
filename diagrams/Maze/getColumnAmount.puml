@@ -1,0 +1,4 @@
+@startuml
+-Вхід\nMaze::getColumnAmount() const
+-Вихід\nm_iColumnAmount
+@enduml

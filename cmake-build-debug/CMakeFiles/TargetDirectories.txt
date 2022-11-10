@@ -1,0 +1,3 @@
+/home/karlenko/CLionProjects/TheoryOfAlg_lab1/cmake-build-debug/CMakeFiles/lab1.dir
+/home/karlenko/CLionProjects/TheoryOfAlg_lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/karlenko/CLionProjects/TheoryOfAlg_lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,15 @@
+@startuml
+-Вхід\nbuildBacktrackingTrail(Maze &maze, vector<Distance> trail)
+:Distance curr = trail[trail.size() - 1] ]
+:size_t iPrevDistance = curr.dist ]
+while(it = trail.cend(), trail.cbegin(), it--)
+    if(iPrevDistance == it->dist + 1 &&\n maze.isNeighborhood(it->vertex, curr.vertex)) is(+) then
+        if(!maze.isStartOrFinishPoint(curr.vertex)) then
+            : maze[curr.vertex] = '*' ]
+        endif
+        : curr = *it ]
+        : iPrevDistance = curr.dist ]
+    endif
+endwhile
+-Вихід
+@enduml

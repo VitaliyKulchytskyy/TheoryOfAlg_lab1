@@ -1,0 +1,12 @@
+@startuml
+-Вхід\nMaze::getNeighborhoods(point_t getFrom) const
+:trail_t output ]
+:const int16_t directions[4][2] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}} ]
+while(onst auto& direction : directions)
+    :point_t next = {getFrom.first + direction[0], getFrom.second + direction[1]} ]
+    if(isValid(getFrom) && isValid(next))
+        :output.push_back(next) |
+    endif
+endwhile
+-Вихід\noutput
+@enduml

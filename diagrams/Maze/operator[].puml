@@ -1,0 +1,8 @@
+@startuml
+-Вхід\nMaze::operator[] (point_t index)
+if(isValid(index))
+    -Вихід\nm_asMap[index.first][index.second]
+    end
+endif
+end
+@enduml

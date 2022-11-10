@@ -1,0 +1,4 @@
+@startuml
+-Вхід\nMaze::getStartPoint() const
+-Вихід\nfindCharPointInMap('S')
+@enduml

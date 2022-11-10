@@ -1,0 +1,4 @@
+@startuml
+-Вхід\nMaze::isValid(point_t checkPair) const
+-Вихід\nisValid(checkPair.first, checkPair.second)
+@enduml

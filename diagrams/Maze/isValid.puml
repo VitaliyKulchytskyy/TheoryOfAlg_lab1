@@ -1,0 +1,8 @@
+@startuml
+-Вхід\nMaze::isValid(size_t row, size_t column) const
+if(row < m_iRowAmount && column < m_iColumnAmount) then
+    -Вихід\nm_asMap[row][column] != '#';
+    end
+endif
+-Вихід\nfalse
+@enduml

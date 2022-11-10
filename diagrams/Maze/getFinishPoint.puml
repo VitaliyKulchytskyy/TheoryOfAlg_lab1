@@ -1,0 +1,4 @@
+@startuml
+-Вхід\nMaze::getFinishPoint() const
+-Вихід\nfindCharPointInMap('F')
+@enduml
