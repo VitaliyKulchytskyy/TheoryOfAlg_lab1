@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <map>
+#include <utility>
 #include <vector>
 #include "Queue.h"
 #include "Maze.h"
@@ -13,18 +14,20 @@
 using namespace std;
 
 struct Distance {
-    size_t dist;
-    point_t vertex;
+    size_t dist = 0;
+    point_t vertex = {0, 0};
 
     Distance(size_t _dist, point_t _vertex)
-        : dist{_dist}, vertex{_vertex}
+        : dist{_dist}, vertex{std::move(_vertex)}
     {}
+
+    Distance() = default;
 };
 
 void buildBacktrackingTrail(Maze &maze, vector<Distance> trail) {
     Distance curr = trail[trail.size() - 1];
     size_t iPrevDistance = curr.dist;
-    for(vector<Distance>::const_iterator it = trail.cend(); it != trail.cbegin(); it--) {
+    for(auto it = trail.cend(); it != trail.cbegin(); it--) {
         if(iPrevDistance == it->dist + 1 &&
            maze.isNeighborhood(it->vertex, curr.vertex))
         {
@@ -43,6 +46,7 @@ void bfs(Maze &maze) {
 
     Queue<Distance> q;
     q.add(Distance(0, startPoint));
+
 
     vector<Distance> weightedGraph;
     weightedGraph.push_back(Distance(0, startPoint));

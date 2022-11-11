@@ -1,9 +1,6 @@
 #ifndef LAB1_TEST_CPP
 #define LAB1_TEST_CPP
 
-#include "MyTest.h"
-#include "Queue.h"
-
 namespace {
     bool queueTestCheckSize_ofThreeElements() {
         Queue<uint16_t> q;
@@ -60,13 +57,11 @@ namespace {
 
 namespace Test {
     void doTest() {
-        const bool tests[] {
-                queueTestCheckSize_ofThreeElements(),
-                queueTestOverPoll(),
-                queueTestFront(),
-                emptyQueueCheckIsEmpty(),
-                notEmptyQueueCheckIsEmpty()
-        };
+        queueTestCheckSize_ofThreeElements();
+        queueTestOverPoll();
+        queueTestFront();
+        emptyQueueCheckIsEmpty();
+        notEmptyQueueCheckIsEmpty();
     }
 }
 
