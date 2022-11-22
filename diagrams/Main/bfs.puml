@@ -2,7 +2,7 @@
 -Вхід\nbfs(Maze& maze)
 :const auto& startPoint = maze.getStartPoint()\nmap<point_t, bool> visited\nvisited[startPoint] = true ]
 :Queue<Distance> q ]
-:.add(Distance(0, startPoint)) |
+:q.add(Distance(0, startPoint)) |
 :vector<Distance> weightedGraph ]
 :weightedGraph.push_back(Distance(0, startPoint)) |
 :const auto& finishPoint = maze.getFinishPoint() ]
